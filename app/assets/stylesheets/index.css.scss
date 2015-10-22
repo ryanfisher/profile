@@ -1,0 +1,76 @@
+$main-blue: #03406a;
+
+body {
+  font-family: "Open Sans";
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#bio-content {
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: $main-blue;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+
+    .github:before { background: image-url('GitHub-Mark-32px.png'); }
+    .twitter:before { background: image-url('Twitter_logo_blue.png'); }
+    .px500:before { background: image-url('500px.jpg'); }
+    .flickr:before { background: image-url('white-small-chiclet.png'); }
+    .github, .twitter, .px500, .flickr {
+      &:before {
+        width: 16px;
+        height: 16px;
+        padding-right: 5px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+      }
+    }
+
+    a:link, a:visited {
+      text-decoration: none;
+      color: $main-blue;
+      font-weight: 100;
+      outline: none;
+    }
+    a:hover, a:active {
+      font-weight: 900;
+    }
+  }
+}
+
+ul.articles {
+  display: inline-block;
+  list-style: none;
+}
+
+@media all and (max-width: 826px) and (min-width: 601px) {
+  .project .header {
+    img { max-width: 45%; }
+    .info { max-width: 45%; }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .project .header {
+    img { width: 100%; }
+    .info {
+      display: block;
+      width: inherit;
+    }
+  }
+}

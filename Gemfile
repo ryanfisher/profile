@@ -21,10 +21,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'passenger'
 
-# Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
-gem 'capistrano-rvm'
-
 gem 'slim', '~> 3.0'
 gem 'actionpack-page_caching', '~> 1.0'
 
@@ -40,5 +36,8 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
 
+  # Use Capistrano for deployment
+  gem 'capistrano-rails', group: :development
+  gem 'capistrano-rvm'
+end

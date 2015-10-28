@@ -8,4 +8,5 @@ html
     = favicon_link_tag 'einstein.jpg'
     = csrf_meta_tags
   body
+    = render partial: 'layouts/application/cache_time'
     = yield

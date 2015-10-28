@@ -24,6 +24,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
+gem 'capistrano-rvm'
 
 gem 'slim', '~> 3.0'
 gem 'actionpack-page_caching', '~> 1.0'

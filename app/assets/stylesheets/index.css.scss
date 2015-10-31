@@ -14,11 +14,16 @@ h1 {
   margin: 0;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.profile-information {
+  display: inline-block;
+  text-align: left;
 
+  p { margin: 10px 0 0; }
+
+  .label {
+    display: inline-block;
+    margin-right: 10px;
+  }
 
   .github:before { background: image-url('GitHub-Mark-32px.png'); }
   .twitter:before { background: image-url('Twitter_logo_blue.png'); }

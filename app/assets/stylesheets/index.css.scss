@@ -17,55 +17,76 @@ h1 {
 .container {
   max-width: 780px;
   margin: 0 auto;
-}
-
-.profile-information {
-  display: inline-block;
   text-align: left;
-
-  p { margin: 10px 0 0; }
-
-  .label {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .github:before { background: image-url('GitHub-Mark-32px.png'); }
-  .twitter:before { background: image-url('Twitter_logo_blue.png'); }
-  .px500:before { background: image-url('500px.jpg'); }
-  .flickr:before { background: image-url('white-small-chiclet.png'); }
-  .github, .twitter, .px500, .flickr {
-    &:before {
-      width: 16px;
-      height: 16px;
-      padding-right: 5px;
-      display: inline-block;
-      background-size: contain;
-      background-repeat: no-repeat;
-      content: '';
-    }
-  }
-
-  a:link, a:visited {
-    text-decoration: none;
-    color: $main-blue;
-    font-weight: 100;
-    outline: none;
-  }
-  a:hover, a:active {
-    font-weight: 900;
-  }
 }
 
 .panel {
+  display: inline-block;
   height: 150px;
   width: 150px;
+  margin: 10px;
+  text-align: center;
   border-radius: 10px;
   background: #03406a;
   color: white;
+  vertical-align: top;
+  text-decoration: none;
+
+  i {
+    font-size: 45px;
+  }
 
   h1 {
     color: white;
     font-size: 38px;
+    margin-top: 15px;
   }
+
+  h4, h5 {
+    margin: 10px 0;
+  }
+
+  &.github {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  &.twitter {
+    background-color: #1da1f2;
+  }
+
+  &.px500 {
+    background-color: #222;
+  }
+
+  &.flickr {
+    background-color: #f5f5f5;
+    color: #0063dc;
+
+    h5 {
+      font-size: 15px;
+      color: #ff0084;
+    }
+  }
+
+  &.px500crocs {
+    background: url(https://drscdn.500px.org/photo/95162451/q%3D80_h%3D300/d9296aeb1a749d8c4d89826104f56488);
+    background-size: cover;
+    background-position: right;
+  }
+
+  &.obi {
+    background: url(https://drscdn.500px.org/photo/110098607/q%3D80_h%3D300/f5c9bcf08f085c69fa4dde310872e069);
+    background-size: cover;
+    background-position: 50% 60%;
+  }
+
+  &.monkey {
+    background: url(https://photodrop.storage.googleapis.com/photos/ryanfisher/16a6b02b08b2d1cb8f2b61dc66b47f46/thumb_20150101-IMG_7751.jpg);
+    background-size: cover;
+  }
+}
+
+a.panel:hover {
+  opacity: 0.5;
 }

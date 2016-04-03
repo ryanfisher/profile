@@ -14,6 +14,11 @@ h1 {
   margin: 0;
 }
 
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
 .profile-information {
   display: inline-block;
   text-align: left;
@@ -49,5 +54,18 @@ h1 {
   }
   a:hover, a:active {
     font-weight: 900;
+  }
+}
+
+.panel {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background: #03406a;
+  color: white;
+
+  h1 {
+    color: white;
+    font-size: 38px;
   }
 }

@@ -1,17 +1,10 @@
 $main-blue: #03406a;
 
 body {
-  font-family: "Open Sans";
-  font-size: 22px;
+  font-family: monospace;
+  font-size: 14px;
   line-height: 1.5;
   text-align: center;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 100;
-  color: $main-blue;
-  margin: 0;
 }
 
 .container {
@@ -20,14 +13,16 @@ h1 {
   text-align: left;
 }
 
+$panel-height: 150px;
+
 .panel {
   display: inline-block;
-  height: 150px;
-  width: 150px;
+  height: $panel-height;
+  width: $panel-height;
   margin: 10px;
   text-align: center;
   border-radius: 10px;
-  background: #03406a;
+  background: $main-blue;
   color: white;
   vertical-align: top;
   text-decoration: none;
@@ -39,7 +34,8 @@ h1 {
   h1 {
     color: white;
     font-size: 38px;
-    margin-top: 15px;
+    font-weight: 100;
+    margin: 15px 0 0;
   }
 
   h4, h5 {
@@ -85,8 +81,19 @@ h1 {
     background: url(https://photodrop.storage.googleapis.com/photos/ryanfisher/16a6b02b08b2d1cb8f2b61dc66b47f46/thumb_20150101-IMG_7751.jpg);
     background-size: cover;
   }
+
+  &.repos {
+    line-height: $panel-height;
+
+    h2 { margin: 0; }
+  }
 }
 
 a.panel:hover {
   opacity: 0.5;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 100;
 }

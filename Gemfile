@@ -24,6 +24,9 @@ gem 'passenger'
 gem 'slim', '~> 3.0'
 gem 'actionpack-action_caching', '~> 1.0'
 
+gem 'redcarpet'
+gem 'coderay'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

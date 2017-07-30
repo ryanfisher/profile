@@ -10,10 +10,15 @@ body {
 .container {
   max-width: 780px;
   margin: 0 auto;
+  padding: 0 10px;
   text-align: left;
 }
 
 h1 {
   font-size: 30px;
   font-weight: 100;
+}
+
+.date {
+  white-space: nowrap;
 }

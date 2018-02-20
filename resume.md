@@ -124,7 +124,7 @@ Google Analytics, Mixpanel, CircleCI, SemaphoreCI, Gitlab, MySQL, DataMapper, Ng
 
 ####Other Interests
 
-Functional Programming (generally), Elm, Haskell
+Functional Programming (generally), Haskell
 
 
 Education
